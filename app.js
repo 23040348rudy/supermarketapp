@@ -3,10 +3,14 @@ const mysql = require('mysql2');
 const app = express();
 // Create MySQL connection
 const connection = mysql.createConnection({
-host: 'localhost',
-user: 'root',
-password: '',
-database: 'c237_supermarketapp'
+//host: 'localhost',
+//user: 'root',
+// password: '',
+// database: 'c237_supermarketapp'
+host: 'sql.freedb.tech',
+user: 'freedb_23040348rudy',
+password: 'dGY!@r552Nb7#wz',
+database: 'freedb_c327_supermarketapp'
 });
 connection.connect((err) => {
 if (err) {
